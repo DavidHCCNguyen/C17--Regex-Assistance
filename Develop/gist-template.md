@@ -1,6 +1,6 @@
 # Regular Expressions (Regex) Tutorial
 
-Welcome to the Regular Expressions (Regex) Tutorial! This tutorial aims to provide a understanding of regular expressions and applications in text processing. Whether you are new to regex or want to enhance your skills, this guide will you with the knowledge needed to leverage regex effectively.
+Welcome to the Regular Expressions (Regex) Tutorial. This tutorial aims to provide a understanding of regular expressions and applications in text processing. This guide will you with the knowledge needed to leverage regex effectively.
 
 ## Summary
 
@@ -164,19 +164,16 @@ The regex `/^([a-z0-9_\.\-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` will match the fo
 ### more Examples:
 ```
 Suppose we have the following text:
-css
-Copy code
+
 john.doe@example.com
+
 The regex /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ will match the following:
 
-john.doe as the username (due to the + quantifier after the character class [a-z0-9_\.-]).
+-[  `john.doe`  ]: as the username (due to the `+` quantifier after the character class `[a-z0-9_\.-]`).
 
-example as the domain name (due to the + quantifier after the character class [\da-z\.-]).
+-[  `example`  ]: as the domain name (due to the `+` quantifier after the character class `[\da-z\.-]`).
 
-.com as the top-level domain (TLD) (due to the {2,6} quantifier specifying 2 to 6 characters for the TLD).
-
-Keep in mind that this is a basic explanation, and regular expressions can become more complex with
-additional symbols and rules for more specific pattern matching.
+-[  `.com` ]: as the top-level domain (TLD) (due to the `{2,6}` quantifier specifying 2 to 6 characters for the TLD).
 ```
 
 ## Author
